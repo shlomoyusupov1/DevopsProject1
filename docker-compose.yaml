@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  my_app:
+    image: shloy/devopsproject1:app-flask
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      
+
+  rverse-proxy:
+    image: shloy/devopsproject1:app-nginx
+    ports:
+      - "80:80"
+
+      
