@@ -1,3 +1,3 @@
 FROM nginx:latest
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY /var/lib/jenkins/workspace/jenkins-docker-integration/default.conf /etc/nginx/conf.d/default.conf
